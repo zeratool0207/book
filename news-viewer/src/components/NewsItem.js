@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components'; 
 
 const NewsItemBlock = styled.div`
     display: flex;
@@ -32,6 +32,7 @@ const NewsItemBlock = styled.div`
 `;
 
 const NewsItem = ({ article }) => {
+    console.log('this is article', article);
     const { title, description, url, urlToImage } = article;
     return (
         <NewsItemBlock>
